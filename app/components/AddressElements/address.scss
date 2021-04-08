@@ -1,0 +1,52 @@
+.address--element-wrap {
+  display: block;
+  padding-left: 16px;
+  .element--title {
+    font-size: 0.8rem;
+    display: inline;
+    font-weight: bold;
+    color: #585858;
+
+    span.address {
+      font-weight: bold;
+      font-size: 120%;
+      color: #f24c34;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .address--section {
+    // &:hover{
+    //   background: #F4DDC4;
+    //   transition: all 0.4s ease-in-out;
+    // }
+    border-radius: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .address--element-container {
+    .address--element-wrap {
+      .element--title {
+        font-size: 20px;
+        color: #585858;
+        // font-weight: 600;
+      }
+    }
+
+  }
+  .address--container .address--card {
+    border: 1px solid #E3E3E3;
+    .MuiCardActionArea-root{
+      padding: 25px;
+    }
+  }
+  .element--hr {
+    border: none!important;
+    margin-bottom: 50px;
+  }
+  .address--cards {
+    padding: 0 50px;
+  }
+
+}

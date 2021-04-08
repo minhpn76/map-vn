@@ -1,0 +1,47 @@
+.infor--contact{
+	display: none;
+}
+
+@media screen and (min-width: 800px) {
+	  .infor--contact {
+			margin-top: 80px;
+			padding: 35px 0 15px 0;
+      display: flex!important;
+      background-image: url(~images/header_bg.png);
+      background-size: 100% 100%;
+    }
+    //Mobile
+    .alert--infor {
+        text-align: center;
+				color:  #ffffff;
+				.box--action--contact {
+					padding-top: 20px;
+				}
+        .typography{
+						display: inline-block;
+            font-weight: bold;
+						font-size: 18px;
+						&:first-child{
+							margin-right: 5px;
+						}
+        }
+    }
+    .icon--girl{
+        display: block!important;
+        height: 87px;
+        width: 52px;
+    }
+    .icon--messenger, .icon--location {
+        height: 70px;
+        width: 70px;
+    }
+    .box-messenger{
+        margin: auto 0 auto auto;
+        display: table;
+    }
+    .box-location{
+        margin: auto auto auto 0;
+        display: table;
+    }
+    //End
+}

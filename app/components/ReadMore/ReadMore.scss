@@ -1,0 +1,93 @@
+.popup--readmore{
+    background: url(~images/bg_traveltip.png);
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    .icon--bottom-right{
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: 100;
+        img {
+            width: 150px;
+        }
+    }
+    .icon--bottom-left{
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        z-index: 100;
+        img {
+            width: 150px;
+        }
+    }
+    .readmore {
+        position: relative;
+        .box--action{
+            .btn--close {
+                position: absolute;
+                z-index: 10;
+                top: 10px;
+                right: 10px;
+            }
+            .MuiIconButton-colorSecondary {
+                color: #fff;
+                background-color: red;
+                &:hover{
+                    background-color: red;
+                }
+            }
+        }
+        .title--readmore {
+            padding-top: 50px;
+            .text {
+                font-size: 30px;
+                color: #E45B00;
+                margin: 0;
+            }
+            .description {
+                color: #E45B00;
+                font-size: 13px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -webkit-line-clamp: 2;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+            }
+        }
+
+        .list--post{
+            margin-top: 40px;
+            overflow-y: scroll;
+            height: 67vh;
+            display: flex;
+            flex-direction: column;
+            .post--item {
+                .link--post{
+                    p {
+                        &:hover{
+                            color: #E45B00;
+                        }
+                    }
+                }
+                background: #B05700;
+                border: 1px solid #89511D;
+                border-radius: 15px;
+                padding: 8px 12px;
+                margin-bottom: 15px;
+                p {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    -webkit-line-clamp: 2;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    color: #fff;
+                    font-size: 15px;
+                }
+            }
+        }
+
+    }
+
+}

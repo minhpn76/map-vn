@@ -1,0 +1,136 @@
+.header--background{
+    display: block!important;
+    background-image: url(~images/header_bg.png);
+    background-size: 100% 100%;
+    &.mobile-hide {
+      display: none !important;
+    }
+    .header--container {
+        padding: 20px;
+    }
+    .alert--infor {
+        text-align: center;
+        color:  #ffffff;
+        .typography{
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+    }
+    .icon--girl{
+        display: block!important;
+        height: 87px;
+        width: 52px;
+    }
+    .icon--messenger, .icon--location {
+        height: 70px;
+        width: 70px;
+    }
+    .box-messenger{
+        margin: auto 0 auto auto;
+        display: table;
+    }
+    .box-location{
+        margin: auto auto auto 0;
+        display: table;
+    }
+    .select--lang {
+        display: flex;
+        align-items: flex-start;
+        .MuiSelect-selectMenu, .MuiSelect-icon{
+            color: #fff;
+        }
+        .MuiInput-underline:before, .MuiInput-underline:after, .MuiInput-underline:hover:not(.Mui-disabled):before{
+            border-bottom: none;
+        }
+        .MuiButton-label{
+            color: #fff;
+            font-size: 11px;
+            font-weight: 900;
+        }
+    }
+
+}
+.icon--correct{
+    width: 20px!important;
+    margin-right: 5px;
+}
+.naviation--menu{
+    display: none!important;
+}
+.icon--logo-pc, .image--lang {
+    display: none!important;
+}
+
+@media screen and (min-width: 767px) {
+    .header--container {
+      display: block;
+    }
+    .header--background {
+        height: 80px;
+        background: #fff;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        &.mobile-hide {
+          display: block !important;
+        }
+        .header--container{
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            // position: fixed;
+            // top: 0;
+            background: #fff;
+            // z-index: 1;
+            padding: 10px;
+            height: 80px;
+            overflow: hidden;
+        }
+        .icon--girl {
+            display: none!important;
+        }
+        .icon--logo-pc {
+            display: block!important;
+            // padding-left: 30px;
+            // width: 80%;
+            height: 60px;
+            max-height: 100%;
+            object-fit: contain;
+            cursor: pointer;
+        }
+        .alert--infor {
+            display: none!important;
+        }
+        .naviation--menu{
+            display: block!important;
+            .MuiBottomNavigationAction-wrapper{
+                align-items: flex-end;
+                flex-direction: revert;
+                .MuiBottomNavigationAction-label{
+                    padding-left: 10px;
+                    font-size: 15px!important;
+                    font-weight: 700;
+                }
+            }
+        }
+        .select--lang {
+            align-items: center;
+            justify-content: flex-end;
+            .MuiButton-label{
+                color: #585858;
+                font-size: 14px;
+            }
+            .image--lang {
+                display: block!important;
+                width: 40px;
+                padding-right: 5px;
+            }
+
+        }
+    }
+
+
+
+}

@@ -1,0 +1,106 @@
+.section--contact {
+    display: none;
+}
+@media screen and (min-width: 800px) {
+    .section--contact{
+        display: block;
+        background: #fff;
+        // margin-top: 40px;
+        .contact-us--container{
+            background: #fff;
+            padding: 50px 24px 0 24px;
+            .element--title-wrap {
+                .element--title {
+                font-size: 20px;
+                color: #585858;
+                // font-weight: 600;
+                span{
+                    font-size: 100%;
+                }
+                .element-to--view {
+                    font-weight: bold;
+                }
+                }
+            }
+            .element--subtittle-wrap {
+                .element--subtittle {
+                    font-size: 15px!important;
+                    .element--we {
+                      span{
+                        color: #585858;
+                        text-transform: initial
+
+                      }
+                    }
+                    .element--neverCharge span {
+                      color: #f24c34;
+                      text-transform: initial
+                    }
+                }
+            }
+            .element-icon{
+                margin: 25px 0 80px 0;
+                padding: 0 15px;
+                img {
+                    max-width: 50px;
+                }
+            }
+            .text--contact{
+                padding-left: 15px;
+                color: #585858;
+                &:hover{
+                    color: #f24c34;
+                }
+            }
+            .contact--below{
+                margin-top: 15px;
+            }
+        }
+        .information{
+            background-image: url(~images/bg_home_pc.png);
+            background-size: 100% 100%;
+            .MuiGrid-container{
+                padding-top: 20px;
+                padding-bottom: 20px;
+                margin-top: 20px;
+            }
+            .text{
+                color: #585858;
+                text-align: center;
+            }
+        }
+        .logo--footer{
+            // height: 60px;
+            max-width: 30%;
+            margin-bottom: 15px;
+            height: 30px;
+            max-height: 100%;
+            object-fit: contain;
+            cursor: pointer;
+        }
+        .title--up{
+            font-weight: 700;
+            color: #585858;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        .title--down{
+            color: #585858;
+            display: flex;
+            margin-bottom: 5px;
+        }
+        .list--contact{
+            margin-top: 20px;
+            position: relative;
+            left: -3px;
+        }
+        .img--social {
+            height: 40px;
+            max-height: 100%;
+            object-fit: contain;
+            cursor: pointer;
+        }
+    }
+
+
+}

@@ -1,0 +1,32 @@
+.map--search {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+
+  @media screen and (min-width: 767px){
+    top: 90px;
+  }
+}
+
+.map--filter {
+  position: fixed;
+  z-index: 1;
+  bottom: 56px;
+  width: 100%;
+  @media screen and (min-width: 767px){
+    bottom: 0;
+  }
+}
+
+//.gm-ui-hover-effect, .gm-style .gm-style-iw-t::after {
+//  display: none!important;
+//}
+.gm-style .gm-style-iw-c {
+  padding: 0px!important;
+}
+.gm-style .gm-style-iw-d{
+  top: 6px;
+  left: 6px;
+  position: relative;
+}

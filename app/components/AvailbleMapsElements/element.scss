@@ -1,0 +1,232 @@
+.element--hr {
+  margin-right: 20px;
+  margin-left: 20px;
+  border: 1px solid #e1e1e1;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+.element--container {
+  padding-top: 20px;
+}
+.element--title-wrap {
+  padding-left: 16px;
+  display: block;
+  .element--title {
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: inline;
+    color: #585858;
+
+    span {
+      font-size: 80%;
+    }
+  }
+  .element--viewmore {
+    float: right;
+    font-size: 0.6rem;
+    line-height: 1.5rem;
+    a {
+      text-decoration: none;
+      color: #f24c34;
+    }
+  }
+}
+
+.element--subtittle-wrap {
+  padding-left: 16px;
+  .element--subtittle {
+    font-size: 0.55rem;
+    span {
+      color: #f24c34;
+      text-transform: uppercase;
+      &.noUppercase {
+        text-transform: none;
+      }
+    }
+  }
+}
+
+.element--maps-avatar {
+  .MuiCard-root {
+    border-radius: 13px;
+  }
+
+  .element--maps-card {
+    width: 150px;
+
+    .element--maps-image {
+      height: 140px;
+    }
+  }
+}
+
+.horizontal-menu {
+  margin: 10px 0;
+  .menu-item-wrapper {
+    padding-left: 8px;
+    &:first-of-type {
+      padding-left: 8px;
+    }
+    &:last-of-type {
+      padding-right: 8px;
+    }
+  }
+}
+.infor--contact {
+  display: none;
+}
+.avaible--section {
+  margin-top: 10px;
+}
+//Responsive PC
+@media screen and (min-width: 800px) {
+  #app {
+      padding-bottom: 0!important;
+  }
+  .horizontal-menu {
+    margin: 20px 0!important;
+    .menu-item-wrapper  {
+      padding-left: 12px!important;
+    }
+  }
+  .avaible--section {
+    margin-top: 10px;
+    // &:hover{
+    //   background: #F4DDC4;
+    //   transition: all 0.4s ease-in-out;
+    // }
+    border-radius: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    .element--maps-avatar {
+
+      .element--maps-card {
+        width: 250px;
+
+        .element--maps-image {
+          height: 240px;
+        }
+      }
+    }
+  }
+  .avaible--maps {
+    .element--title-wrap {
+      .element--title {
+        font-size: 20px;
+        color: #585858;
+        span{
+          font-size: 100%;
+        }
+      }
+    }
+    .element--subtittle {
+      // padding-left: 25px;
+      font-size: 15px!important;
+      .element--we {
+        span{
+          color: #585858;
+          text-transform: none;
+        }
+      }
+      .element--build span {
+        color: #585858;
+        text-transform: initial
+      }
+    }
+  }
+  .avaible--maps-scroll {
+    margin-bottom: 50px;
+    .element--hr {
+      border: none;
+    }
+    .menu-wrapper  {
+      animation-name: reverseMenuWrapper;
+      animation-duration: 0.6s;
+      &:hover{
+        animation-name: menuWrapper;
+        animation-duration: 0.9s;
+        animation-fill-mode: forwards;
+      }
+      .menu-item-wrapper {
+        animation-name: reverseMenuItemWrapper;
+        animation-duration: 0.6s;
+        &:hover{
+          animation-name: menuItemWrapper;
+          animation-duration: 0.9s;
+          animation-fill-mode: forwards;
+          z-index: 2;
+        }
+      }
+    }
+
+  }
+  .avaible--maps {
+    .element--viewmore {
+      cursor: pointer;
+      font-size: 15px!important;
+
+      padding: 3px 25px;
+
+      border-radius: 20px;
+      background: rgb(253,202,27);
+      color: #fff!important;
+      background: linear-gradient(180deg, rgba(253,202,27,1) 43%, rgba(250,141,5,1) 100%);
+      box-shadow: 2px 4px 1px 0px rgba(197,105,5,1);
+      a{
+        color: #fff!important;
+      }
+      span{
+        text-transform: uppercase;
+      }
+    }
+
+  }
+  @keyframes menuItemWrapper {
+    from {
+        margin-left: 0px;
+        margin-right: 0px;
+        transform: scale(1);
+    }
+    to {
+      margin-left: 20px;
+      margin-right: 20px;
+      transform: scale(1.2);
+    }
+  }
+  @keyframes reverseMenuItemWrapper {
+    from {
+      margin-left: 20px;
+      margin-right: 20px;
+      transform: scale(1.2);
+    }
+    to {
+      margin-left: 0px;
+      margin-right: 0px;
+      transform: scale(1);
+    }
+  }
+  @keyframes menuWrapper {
+    from {
+      height: 240px;
+      padding-top: 0px;
+    }
+    to {
+      height: 300px;
+      padding-top: 30px;
+    }
+  }
+  @keyframes reverseMenuWrapper {
+    from {
+      height: 300px;
+      padding-top: 30px;
+    }
+    to {
+      height: 240px;
+      padding-top: 0px;
+    }
+  }
+
+
+
+}

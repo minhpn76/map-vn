@@ -1,0 +1,137 @@
+.element--hr {
+  margin-right: 20px;
+  margin-left: 20px;
+  border: 1px solid #e1e1e1;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+.element--container {
+  padding-top: 20px;
+}
+.element--title-wrap {
+  padding-left: 16px;
+  display: block;
+  .element--title {
+    font-size: .8rem;
+    font-weight: bold;
+    display: inline;
+
+    span {
+      font-size: 80%;
+    }
+  }
+  .element--viewmore {
+    float: right;
+    font-size: 0.6rem;
+    line-height: 1.5rem;
+    color: #f24c34;
+  }
+}
+
+.element--subtittle-wrap {
+  padding-left: 16px;
+  .element--subtittle {
+    font-size: 0.55rem;
+    span {
+      color: #f24c34;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.element--maps-avatar {
+  .MuiCard-root {
+    border-radius: 13px;
+  }
+
+  .element--maps-card {
+    width: 150px;
+
+    .element--maps-image {
+      height: 140px;
+    }
+  }
+}
+
+.horizontal-menu {
+  margin: 10px 0;
+  .menu-item-wrapper {
+    padding-left: 8px;
+    &:first-of-type {
+      padding-left: 8px;
+    }
+    &:last-of-type {
+      padding-right: 8px;
+    }
+  }
+}
+
+//Responsive PC
+.arrow-prev, .arrow-next {
+  display: none!important;
+}
+
+@media screen and (min-width: 800px) {
+  .arrow-prev {
+    width: 40px;
+    cursor: pointer;
+    margin-right: 10px;
+    display: block!important;
+  }
+  .arrow-next {
+    width: 40px;
+    cursor: pointer;
+    margin-left: 10px;
+    display: block!important;
+  }
+  .section--illus {
+    background: #F4DDC4;
+    border-radius: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    .illus--container {
+      .element--title-wrap {
+        .element--title {
+          font-size: 20px;
+          color: #585858;
+          // font-weight: 600;
+          span{
+            font-size: 100%;
+          }
+          .element-to--view {
+            font-weight: bold;
+          }
+        }
+      }
+      .element--subtittle {
+        // padding-left: 25px;
+        font-size: 15px!important;
+        .element--we {
+          span{
+            color: #585858;
+            text-transform: none;
+          }
+        }
+        .element--city span {
+          color: #585858;
+          text-transform: initial
+        }
+      }
+      .element--viewmore {
+        cursor: pointer;
+        font-size: 15px!important;
+        padding: 3px 25px;
+        border-radius: 20px;
+        background: rgb(253,202,27);
+        color: #fff!important;
+        box-shadow: 2px 4px 1px 0px rgba(197,105,5,1);
+        background: linear-gradient(180deg, rgba(253,202,27,1) 43%, rgba(250,141,5,1) 100%);
+        span{
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@media screen and (min-width: 768px) {
+  @mixin width-drawer {
+    width: calc(100% - 400px);
+  }
+  @mixin width-transition {
+    transition: width .4s;
+  }
+
+  .drawer {
+    transition: margin .4s;
+    .header--container {
+      transition: width .4s;
+    }
+    .map--search {
+      transition: width .4s;
+    }
+    .map--filter {
+      transition: width .4s;
+    }
+    .popover-loaction {
+      transition: width .4s;
+    }
+
+    &.open {
+      @include width-drawer;
+      margin-left: 400px;
+      .header--container {
+        @include width-drawer;
+      }
+      .map--search {
+        @include width-drawer;
+      }
+      .map--filter {
+        @include width-drawer;
+      }
+      .popover-loaction {
+        @include width-drawer;
+      }
+    }
+  }
+}
